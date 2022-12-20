@@ -21,6 +21,8 @@ header {
   min-height: 20vh;
   font-family: sans-serif;
 
+  background: $main-dark;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +42,8 @@ header {
     gap: 1rem;
     // margin-right: 2rem;
 
+    @include flexCenter();
+
     input {
       padding: 0.3rem;
       font-size: 1.78rem;
@@ -49,11 +53,21 @@ header {
       text-decoration: none;
       color: whitesmoke;
       font-size: 2rem;
-      font-weight: 800;
+      // font-weight: 800;
 
       &:hover {
         color: $primary-color;
       }
     }
+  }
+}
+
+// header done
+
+main {
+  .hero {
+    width: 100%;
+    min-height: 80vh;
+    @include imageOverlay("../img/offices.jpg");
   }
 }

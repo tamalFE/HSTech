@@ -17,6 +17,7 @@ header {
   width: 100%;
   min-height: 20vh;
   font-family: sans-serif;
+  background: #212121;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +33,11 @@ header .list {
   display: flex;
   padding: 1rem;
   gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 header .list input {
   padding: 0.3rem;
@@ -41,8 +47,16 @@ header .list a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 2rem;
-  font-weight: 800;
 }
 header .list a:hover {
   color: #4caf50;
+}
+
+main .hero {
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../img/offices.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
