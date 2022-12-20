@@ -1,0 +1,38 @@
+@import "./_colors";
+
+@mixin flexCenter($direction: row, $wrap: nowrap) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin gradient {
+  background: $gradient-main; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    $gradient-secondary,
+    $gradient-main
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    $gradient-secondary,
+    $gradient-main
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin hoverStyle() {
+  cursor: pointer;
+}
+
+@mixin imageOverlay($url, $overlayColor: black) {
+  background: linear-gradient(
+      rgba($overlayColor, 0.9),
+      rgba($overlayColor, 0.6)
+    ),
+    url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
