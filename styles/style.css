@@ -147,3 +147,16 @@ main .hero .moto form button {
   width: calc(50% - 1rem);
   background: brown;
 }
+
+article {
+  width: 100%;
+  min-height: 80vh;
+  background: black;
+  display: flex;
+  gap: 1rem;
+  padding: 3rem;
+}
+article .speech {
+  flex: 1;
+  background: whitesmoke;
+}

@@ -177,3 +177,18 @@ main {
     }
   }
 }
+
+article {
+  width: 100%;
+  min-height: 80vh;
+  background: black;
+
+  display: flex;
+  gap: $flex-gap;
+  padding: $common-padding-x;
+
+  .speech {
+    flex: 1;
+    background: $main-light;
+  }
+}
