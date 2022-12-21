@@ -148,3 +148,32 @@ main {
     background: green;
   }
 }
+
+.About {
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+  background: purple;
+  gap: $flex-gap;
+  padding: $common-padding-x;
+
+  .text {
+    flex: 1;
+    background: $main-light;
+  }
+
+  .cards {
+    flex: 1;
+
+    background: $main-light;
+    display: flex;
+    gap: $flex-gap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+      width: calc(50% - $flex-gap);
+      background: brown;
+    }
+  }
+}
