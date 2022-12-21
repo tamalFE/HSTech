@@ -160,3 +160,9 @@ article .speech {
   flex: 1;
   background: whitesmoke;
 }
+
+footer {
+  width: 100%;
+  min-height: 40vh;
+  background: #212121;
+}
