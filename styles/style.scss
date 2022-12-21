@@ -1,6 +1,7 @@
 @import "./partials/_colors";
 @import "./partials/_mixins";
 @import "./partials/_spacing";
+@import "./partials/_media";
 
 :root {
   font-size: 10px;
@@ -206,4 +207,50 @@ footer {
   width: 100%;
   min-height: 40vh;
   background: $main-dark;
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  body {
+    header {
+      flex-direction: column;
+
+      input {
+        display: none;
+      }
+    }
+    main {
+      .hero {
+        min-height: 75vh;
+        .moto {
+          width: 100%;
+          padding: 8rem 2rem;
+          text-align: justify;
+
+          h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+          }
+
+          form {
+            margin-top: 5.5rem;
+            width: 100%;
+          }
+        }
+      }
+      .Introduce {
+        flex-direction: column;
+      }
+      .About {
+        flex-direction: column;
+
+        .cards {
+          flex-direction: column;
+          .card {
+            min-height: 25rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

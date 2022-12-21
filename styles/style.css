@@ -174,3 +174,41 @@ footer {
   min-height: 40vh;
   background: #212121;
 }
+
+@media only screen and (max-width: 700px) {
+  body header {
+    flex-direction: column;
+  }
+  body header input {
+    display: none;
+  }
+  body main .hero {
+    min-height: 75vh;
+  }
+  body main .hero .moto {
+    width: 100%;
+    padding: 8rem 2rem;
+    text-align: justify;
+  }
+  body main .hero .moto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  body main .hero .moto form {
+    margin-top: 5.5rem;
+    width: 100%;
+  }
+  body main .Introduce {
+    flex-direction: column;
+  }
+  body main .About {
+    flex-direction: column;
+  }
+  body main .About .cards {
+    flex-direction: column;
+  }
+  body main .About .cards .card {
+    min-height: 25rem;
+    width: 100%;
+  }
+}
