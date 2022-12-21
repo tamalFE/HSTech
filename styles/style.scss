@@ -189,11 +189,21 @@ main {
 
   .text {
     flex: 1;
-    background: $main-light;
+    background: $main-dark;
+    color: $main-light;
+
+    padding: $common-padding-x;
+    display: flex;
+    flex-direction: column;
+    gap: $common-padding-x;
+
+    P {
+      text-align: justify;
+    }
   }
 
   .cards {
-    flex: 1;
+    flex: 2;
 
     background: $main-light;
     display: flex;
