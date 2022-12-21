@@ -16,11 +16,11 @@
 body {
   min-height: 100vh;
   font-size: 1.6rem;
+  font-family: sans-serif;
 }
 header {
   width: 100%;
   min-height: 10vh;
-  font-family: sans-serif;
 
   background: $main-dark;
 
@@ -140,13 +140,42 @@ main {
   display: flex;
   width: 100%;
   min-height: 80vh;
-  background: red;
+  // background: red;
   gap: $flex-gap;
   padding: $common-padding-x;
 
   .column {
     flex: 1;
-    background: green;
+    // background: green;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    h2 {
+      font-size: 3rem;
+      text-transform: capitalize;
+    }
+    img {
+      width: 100%;
+    }
+
+    p {
+      font-size: 1.8rem;
+      text-align: justify;
+    }
+
+    a {
+      text-decoration: none;
+      background: $primary-color;
+      color: $main-light;
+
+      width: 40%;
+      padding: 1rem;
+      text-align: center;
+      border-radius: $common-border-radius;
+    }
   }
 }
 
@@ -188,7 +217,7 @@ main {
   flex-direction: column;
 }
 
-article {
+.testimonials {
   width: 100%;
   min-height: 80vh;
   background: black;
@@ -205,8 +234,11 @@ article {
 
 footer {
   width: 100%;
-  min-height: 40vh;
+  min-height: 10vh;
   background: $main-dark;
+  color: $main-light;
+
+  @include flexCenter();
 }
 
 @media only screen and (max-width: $mobile-screen) {
@@ -239,6 +271,12 @@ footer {
       }
       .Introduce {
         flex-direction: column;
+
+        .column {
+          a {
+            width: 100%;
+          }
+        }
       }
       .About {
         flex-direction: column;
@@ -250,6 +288,9 @@ footer {
             width: 100%;
           }
         }
+      }
+      .testimonials {
+        flex-direction: column;
       }
     }
   }

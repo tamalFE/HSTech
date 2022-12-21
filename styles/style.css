@@ -11,12 +11,12 @@
 body {
   min-height: 100vh;
   font-size: 1.6rem;
+  font-family: sans-serif;
 }
 
 header {
   width: 100%;
   min-height: 10vh;
-  font-family: sans-serif;
   background: #212121;
   display: flex;
   justify-content: space-between;
@@ -114,13 +114,35 @@ main .hero .moto form button {
   display: flex;
   width: 100%;
   min-height: 80vh;
-  background: red;
   gap: 1rem;
   padding: 3rem;
 }
 .Introduce .column {
   flex: 1;
-  background: green;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.Introduce .column h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.Introduce .column img {
+  width: 100%;
+}
+.Introduce .column p {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.Introduce .column a {
+  text-decoration: none;
+  background: #4caf50;
+  color: whitesmoke;
+  width: 40%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
 }
 
 .About {
@@ -156,7 +178,7 @@ main .hero .moto form button {
   flex-direction: column;
 }
 
-article {
+.testimonials {
   width: 100%;
   min-height: 80vh;
   background: black;
@@ -164,15 +186,21 @@ article {
   gap: 1rem;
   padding: 3rem;
 }
-article .speech {
+.testimonials .speech {
   flex: 1;
   background: whitesmoke;
 }
 
 footer {
   width: 100%;
-  min-height: 40vh;
+  min-height: 10vh;
   background: #212121;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 @media only screen and (max-width: 700px) {
@@ -201,6 +229,9 @@ footer {
   body main .Introduce {
     flex-direction: column;
   }
+  body main .Introduce .column a {
+    width: 100%;
+  }
   body main .About {
     flex-direction: column;
   }
@@ -210,5 +241,8 @@ footer {
   body main .About .cards .card {
     min-height: 25rem;
     width: 100%;
+  }
+  body main .testimonials {
+    flex-direction: column;
   }
 }
