@@ -18,7 +18,7 @@ body {
 }
 header {
   width: 100%;
-  min-height: 15vh;
+  min-height: 10vh;
   font-family: sans-serif;
 
   background: $main-dark;
@@ -45,14 +45,31 @@ header {
     @include flexCenter();
 
     input {
-      padding: 0.3rem;
-      font-size: 1.78rem;
+      // padding: 0.2rem;
+      font-size: 1.5rem;
+      background: transparent;
+      border: none;
+
+      @include boxShadow();
+      outline: none;
+
+      padding: 1rem;
+      border-radius: $common-border-radius;
+      color: $main-light;
+
+      &:focus {
+        border: 1px solid $primary-color;
+      }
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
     }
 
     a {
       text-decoration: none;
       color: whitesmoke;
-      font-size: 2rem;
+      font-size: 1.6rem;
       // font-weight: 800;
 
       &:hover {
@@ -97,6 +114,7 @@ main {
 
         input {
           padding: 0.8rem;
+          border-radius: $common-border-radius;
         }
 
         button {
@@ -108,6 +126,7 @@ main {
           background: $primary-color;
           color: $main-light;
           margin: 0.5rem 0;
+          border-radius: $common-border-radius;
         }
       }
     }
@@ -115,3 +134,17 @@ main {
 }
 
 //Hero done(12/21/22) but need to work on media query
+
+.Introduce {
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+  background: red;
+  gap: $flex-gap;
+  padding: $common-padding-x;
+
+  .column {
+    flex: 1;
+    background: green;
+  }
+}

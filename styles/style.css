@@ -15,7 +15,7 @@ body {
 
 header {
   width: 100%;
-  min-height: 15vh;
+  min-height: 10vh;
   font-family: sans-serif;
   background: #212121;
   display: flex;
@@ -40,13 +40,25 @@ header .list {
   flex-wrap: nowrap;
 }
 header .list input {
-  padding: 0.3rem;
-  font-size: 1.78rem;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  box-shadow: 0 1px 2px rgba(245, 245, 245, 0.4), inset 0 1px 2px rgba(245, 245, 245, 0.4);
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: whitesmoke;
+}
+header .list input:focus {
+  border: 1px solid #4caf50;
+}
+header .list input::placeholder {
+  text-transform: capitalize;
 }
 header .list a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 header .list a:hover {
   color: #4caf50;
@@ -84,6 +96,7 @@ main .hero .moto form {
 }
 main .hero .moto form input {
   padding: 0.8rem;
+  border-radius: 0.5rem;
 }
 main .hero .moto form button {
   width: 100%;
@@ -94,4 +107,18 @@ main .hero .moto form button {
   background: #4caf50;
   color: whitesmoke;
   margin: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.Introduce {
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+  background: red;
+  gap: 1rem;
+  padding: 3rem;
+}
+.Introduce .column {
+  flex: 1;
+  background: green;
 }
