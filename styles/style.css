@@ -245,8 +245,14 @@ main .hero .moto form button {
   text-align: justify;
   gap: 10rem;
 }
+.process .process___content .content {
+  background: lightgray;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 .process .process___content .content h2 {
   text-align: center;
+  margin: 1rem;
 }
 
 .testimonials {
@@ -322,12 +328,22 @@ footer {
     flex-direction: column;
     padding: 2rem;
   }
+  body main .About .text {
+    padding: 0;
+  }
   body main .About .cards {
     flex-direction: column;
   }
   body main .About .cards .card {
     min-height: 25rem;
     width: 100%;
+  }
+  body main .process {
+    padding: 2rem;
+  }
+  body main .process .process___content {
+    flex-direction: column;
+    gap: 1rem;
   }
   body main .testimonials {
     flex-direction: column;

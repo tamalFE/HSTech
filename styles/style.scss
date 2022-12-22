@@ -192,7 +192,7 @@ main {
     padding-right: $common-padding-x / 2;
     display: flex;
     flex-direction: column;
-    gap: $common-padding-x/3;
+    gap: $common-padding-x / 3;
 
     h4 {
       font-size: 2rem;
@@ -290,8 +290,12 @@ main {
     gap: $common-padding-x;
 
     .content {
+      background: lightgray;
+      padding: 1rem;
+      border-radius: $common-border-radius;
       h2 {
         text-align: center;
+        margin: 1rem;
       }
       // &.left {
       //   h2 {
@@ -387,6 +391,9 @@ footer {
         }
       }
       .About {
+        .text {
+          padding: 0;
+        }
         flex-direction: column;
         padding: $common-padding-x-small;
 
@@ -396,6 +403,13 @@ footer {
             min-height: 25rem;
             width: 100%;
           }
+        }
+      }
+      .process {
+        padding: $common-padding-x-small;
+        .process___content {
+          flex-direction: column;
+          gap: 1rem;
         }
       }
       .testimonials {
